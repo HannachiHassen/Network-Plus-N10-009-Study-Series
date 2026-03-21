@@ -1,0 +1,111 @@
+<svg width="100%" viewBox="0 0 680 620" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <path d="M2 1L8 5L2 9" fill="none" stroke="context-stroke" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+    </marker>
+  </defs>
+
+  <!-- Title -->
+  <text x="340" y="34" text-anchor="middle" font-family="system-ui, sans-serif" font-size="18" font-weight="500" fill="#1a1a1a">OSI Model vs TCP/IP Model</text>
+  <text x="340" y="54" text-anchor="middle" font-family="system-ui, sans-serif" font-size="12" fill="#666">Layer mapping and protocol examples</text>
+
+  <!-- Column headers -->
+  <rect x="60" y="66" width="240" height="36" rx="8" fill="#185FA5" opacity="0.15"/>
+  <text x="180" y="89" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#0C447C">OSI Model (7 layers)</text>
+
+  <rect x="380" y="66" width="240" height="36" rx="8" fill="#3B6D11" opacity="0.15"/>
+  <text x="500" y="89" text-anchor="middle" font-family="system-ui, sans-serif" font-size="14" font-weight="500" fill="#27500A">TCP/IP Model (4 layers)</text>
+
+  <!-- Mapping lines label -->
+  <text x="340" y="89" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#aaa">maps to</text>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- OSI Layer 7 — Application -->
+  <rect x="60" y="112" width="240" height="48" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="80" y="131" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#0C447C">7 — Application</text>
+  <text x="80" y="148" font-family="system-ui, sans-serif" font-size="10" fill="#378ADD">HTTP, DNS, FTP, SMTP, SSH</text>
+
+  <!-- OSI Layer 6 — Presentation -->
+  <rect x="60" y="164" width="240" height="48" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="80" y="183" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#0C447C">6 — Presentation</text>
+  <text x="80" y="200" font-family="system-ui, sans-serif" font-size="10" fill="#378ADD">SSL/TLS, JPEG, ASCII, encryption</text>
+
+  <!-- OSI Layer 5 — Session -->
+  <rect x="60" y="216" width="240" height="48" rx="6" fill="#E6F1FB" stroke="#185FA5" stroke-width="0.5"/>
+  <text x="80" y="235" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#0C447C">5 — Session</text>
+  <text x="80" y="252" font-family="system-ui, sans-serif" font-size="10" fill="#378ADD">NetBIOS, RPC, SIP</text>
+
+  <!-- TCP/IP Application layer (spans OSI 5+6+7) -->
+  <rect x="380" y="112" width="240" height="152" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+  <text x="500" y="176" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#27500A">Application</text>
+  <text x="500" y="196" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3B6D11">HTTP, DNS, FTP, SMTP</text>
+  <text x="500" y="212" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3B6D11">SSH, Telnet, SNMP, NTP</text>
+  <text x="500" y="228" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#639922">Combines OSI layers 5, 6, and 7</text>
+
+  <!-- Mapping lines: OSI 5/6/7 → TCP/IP Application -->
+  <line x1="300" y1="136" x2="380" y2="168" stroke="#185FA5" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+  <line x1="300" y1="188" x2="380" y2="188" stroke="#185FA5" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+  <line x1="300" y1="240" x2="380" y2="208" stroke="#185FA5" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- OSI Layer 4 — Transport -->
+  <rect x="60" y="276" width="240" height="64" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+  <text x="80" y="298" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#27500A">4 — Transport</text>
+  <text x="80" y="316" font-family="system-ui, sans-serif" font-size="10" fill="#3B6D11">TCP, UDP — segments</text>
+  <text x="80" y="332" font-family="system-ui, sans-serif" font-size="9" fill="#639922">Flow control, error recovery</text>
+
+  <!-- TCP/IP Transport layer (spans OSI 4) -->
+  <rect x="380" y="276" width="240" height="64" rx="6" fill="#EAF3DE" stroke="#3B6D11" stroke-width="0.5"/>
+  <text x="500" y="300" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#27500A">Transport</text>
+  <text x="500" y="320" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3B6D11">TCP — reliable, ordered</text>
+  <text x="500" y="334" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#3B6D11">UDP — fast, connectionless</text>
+
+  <!-- Mapping lines: OSI 4 → TCP/IP Transport (1:1) -->
+  <line x1="300" y1="308" x2="380" y2="308" stroke="#3B6D11" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- OSI Layer 3 — Network -->
+  <rect x="60" y="352" width="240" height="64" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="80" y="374" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#633806">3 — Network</text>
+  <text x="80" y="392" font-family="system-ui, sans-serif" font-size="10" fill="#854F0B">IP, ICMP, ARP — packets</text>
+  <text x="80" y="408" font-family="system-ui, sans-serif" font-size="9" fill="#BA7517">Routing, logical addressing</text>
+
+  <!-- TCP/IP Internet layer (spans OSI 3) -->
+  <rect x="380" y="352" width="240" height="64" rx="6" fill="#FAEEDA" stroke="#854F0B" stroke-width="0.5"/>
+  <text x="500" y="376" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#633806">Internet</text>
+  <text x="500" y="396" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#854F0B">IPv4, IPv6, ICMP</text>
+  <text x="500" y="412" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#854F0B">ARP, OSPF, BGP</text>
+
+  <!-- Mapping lines: OSI 3 → TCP/IP Internet (1:1) -->
+  <line x1="300" y1="384" x2="380" y2="384" stroke="#854F0B" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+
+  <!-- ═══════════════════════════════════════════ -->
+  <!-- OSI Layer 2 — Data Link -->
+  <rect x="60" y="428" width="240" height="48" rx="6" fill="#FAECE7" stroke="#993C1D" stroke-width="0.5"/>
+  <text x="80" y="447" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#712B13">2 — Data Link</text>
+  <text x="80" y="464" font-family="system-ui, sans-serif" font-size="10" fill="#993C1D">Ethernet, 802.11 — frames, MAC</text>
+
+  <!-- OSI Layer 1 — Physical -->
+  <rect x="60" y="480" width="240" height="48" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="80" y="499" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#444441">1 — Physical</text>
+  <text x="80" y="516" font-family="system-ui, sans-serif" font-size="10" fill="#888780">Cables, signals, bits, voltages</text>
+
+  <!-- TCP/IP Network Interface layer (spans OSI 1+2) -->
+  <rect x="380" y="428" width="240" height="100" rx="6" fill="#F1EFE8" stroke="#5F5E5A" stroke-width="0.5"/>
+  <text x="500" y="468" text-anchor="middle" font-family="system-ui, sans-serif" font-size="13" font-weight="500" fill="#444441">Network Interface</text>
+  <text x="500" y="488" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#5F5E5A">Ethernet, 802.11, PPP</text>
+  <text x="500" y="504" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#5F5E5A">MAC addressing, framing</text>
+  <text x="500" y="520" text-anchor="middle" font-family="system-ui, sans-serif" font-size="9" fill="#888780">Combines OSI layers 1 and 2</text>
+
+  <!-- Mapping lines: OSI 1+2 → TCP/IP Network Interface -->
+  <line x1="300" y1="452" x2="380" y2="464" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+  <line x1="300" y1="504" x2="380" y2="488" stroke="#5F5E5A" stroke-width="0.5" stroke-dasharray="4 3" opacity="0.5"/>
+
+  <!-- Divider line -->
+  <line x1="60" y1="548" x2="620" y2="548" stroke="#ddd" stroke-width="1"/>
+
+  <!-- Key differences summary -->
+  <text x="340" y="568" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" font-weight="500" fill="#444">Key difference: TCP/IP collapses OSI layers 5+6+7 → Application, and layers 1+2 → Network Interface</text>
+  <text x="340" y="586" text-anchor="middle" font-family="system-ui, sans-serif" font-size="11" fill="#888">OSI = conceptual reference model   |   TCP/IP = practical implementation model used on the internet</text>
+  <text x="340" y="604" text-anchor="middle" font-family="system-ui, sans-serif" font-size="10" fill="#aaa">Also called: TCP/IP Internet layer = OSI Network layer   |   TCP/IP Link layer = OSI Data Link + Physical</text>
+</svg>
