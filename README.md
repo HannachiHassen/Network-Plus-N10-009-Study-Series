@@ -243,7 +243,7 @@ A network's topology defines how devices are physically and logically connected.
 ├── 📄 README.md                         ← You are here
 │
 ├── 📁 Chapter-01-OSI-Model/
-│   ├── notes.md
+│   ├── OSI Model.pdf
 │   ├── diagrams/
 │   └── practice-questions.md
 │
