@@ -61,7 +61,7 @@ The **Open Systems Interconnection (OSI)** model is a conceptual framework that 
 - Troubleshooting using the OSI model
 - TCP/IP model vs. OSI model comparison
 
-📄 [View Chapter 1 Notes](https://github.com/HannachiHassen/Network-009-Study-Series/blob/master/Chapter%201%20-The%20OSI%20Model%20Explained.pdf) | 🧪 [Practice Questions](#)
+📄 [View Chapter 1 Notes](https://github.com/HannachiHassen/Network-009-Study-Series/blob/master/Chapter-01-OSI-Model/Chapter%201%20-The%20OSI%20Model%20Explained.pdf) | 🧪 [Practice Questions](https://github.com/HannachiHassen/Network-009-Study-Series/blob/master/Chapter-01-OSI-Model/practice-questions-chapter-01.md#-fill-in-the-blank)
 
 ---
 
@@ -382,7 +382,6 @@ I'm a cybersecurity apprentice documenting my journey into the field. Let's conn
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Connect-0A66C2?style=for-the-badge&logo=linkedin&logoColor=white)](#)
 [![GitHub](https://img.shields.io/badge/GitHub-Follow-181717?style=for-the-badge&logo=github&logoColor=white)](#)
-[![Twitter](https://img.shields.io/badge/Twitter-Follow-1DA1F2?style=for-the-badge&logo=twitter&logoColor=white)](#)
 
 ---
 
