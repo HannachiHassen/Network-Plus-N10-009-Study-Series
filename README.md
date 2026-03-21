@@ -61,7 +61,7 @@ The **Open Systems Interconnection (OSI)** model is a conceptual framework that 
 - Troubleshooting using the OSI model
 - TCP/IP model vs. OSI model comparison
 
-📄 [View Chapter 1 Notes](#) | 🧪 [Practice Questions](#)
+📄 [View Chapter 1 Notes](https://github.com/HannachiHassen/Network-009-Study-Series/blob/master/Chapter%201%20-The%20OSI%20Model%20Explained.pdf) | 🧪 [Practice Questions](#)
 
 ---
 
