@@ -1,5 +1,5 @@
 # 🌐 Network+ N10-009 Study Series
-### *A Cybersecurity Apprentice's Complete Exam Preparation Guide*
+### *A CompTIA Network+ Complete Exam Preparation Guide*
 
 ![CompTIA Network+](https://img.shields.io/badge/CompTIA-Network%2B%20N10--009-FF0000?style=for-the-badge&logo=comptia&logoColor=white)
 ![Status](https://img.shields.io/badge/Status-In%20Progress-yellow?style=for-the-badge)
@@ -10,7 +10,7 @@
 
 ## 📌 About This Repository
 
-Welcome to my **Network+ N10-009 Study Series** — a structured, chapter-by-chapter breakdown of everything covered in the CompTIA Network+ exam. As a **cybersecurity apprentice**, I built this repository to document my learning journey, reinforce core networking concepts, and create a reference guide for anyone else preparing for this certification.
+Welcome to my **Network+ N10-009 Study Series** — a structured, chapter-by-chapter breakdown of everything covered in the CompTIA Network+ exam. As a **cybersecurity**, I built this repository to document my learning journey, reinforce core networking concepts, and create a reference guide for anyone else preparing for this certification.
 
 Whether you're just starting out or need a quick refresh, this series is designed to be clear, practical, and exam-focused.
 
@@ -243,12 +243,12 @@ A network's topology defines how devices are physically and logically connected.
 ├── 📄 README.md                         ← You are here
 │
 ├── 📁 Chapter-01-OSI-Model/
-│   ├── OSI Model.pdf
+│   ├── The OSI model Explained.pdf
 │   ├── diagrams/
 │   └── practice-questions.md
 │
 ├── 📁 Chapter-02-Networking-Appliances/
-│   ├── notes.md
+│   ├── Netorking Appliance, Applications and Functions.pdf
 │   ├── diagrams/
 │   └── practice-questions.md
 │
