@@ -397,6 +397,6 @@ All content is for **educational purposes only**. CompTIA® and Network+® are r
 
 **📡 Built with curiosity, discipline, and a lot of coffee ☕**
 
-*Last Updated: 2025 | Network+ N10-009*
+*Last Updated: 2026 | Network+ N10-009*
 
 </div>
