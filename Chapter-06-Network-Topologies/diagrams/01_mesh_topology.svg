@@ -1,0 +1,59 @@
+<svg viewBox="0 0 600 420" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="600" height="420" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="600" height="4" fill="#0A5C36"/>
+
+  <!-- Title -->
+  <text x="300" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0A5C36" letter-spacing="0.5">Mesh Topology</text>
+  <text x="300" y="56" text-anchor="middle" font-size="11" fill="#888" letter-spacing="1">EVERY NODE CONNECTS TO EVERY OTHER NODE</text>
+
+  <!-- Define node positions: hexagonal layout -->
+  <!-- Top: A(300,110), TopRight: B(440,170), BottomRight: C(440,300), Bottom: D(300,360), BottomLeft: E(160,300), TopLeft: F(160,170) -->
+
+  <!-- All mesh connections (15 lines for 6 nodes) -->
+  <!-- A-B --> <line x1="300" y1="110" x2="440" y2="170" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- A-C --> <line x1="300" y1="110" x2="440" y2="300" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- A-D --> <line x1="300" y1="110" x2="300" y2="360" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- A-E --> <line x1="300" y1="110" x2="160" y2="300" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- A-F --> <line x1="300" y1="110" x2="160" y2="170" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- B-C --> <line x1="440" y1="170" x2="440" y2="300" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- B-D --> <line x1="440" y1="170" x2="300" y2="360" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- B-E --> <line x1="440" y1="170" x2="160" y2="300" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- B-F --> <line x1="440" y1="170" x2="160" y2="170" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- C-D --> <line x1="440" y1="300" x2="300" y2="360" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- C-E --> <line x1="440" y1="300" x2="160" y2="300" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- C-F --> <line x1="440" y1="300" x2="160" y2="170" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- D-E --> <line x1="300" y1="360" x2="160" y2="300" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- D-F --> <line x1="300" y1="360" x2="160" y2="170" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- E-F --> <line x1="160" y1="300" x2="160" y2="170" stroke="#B0D4BF" stroke-width="1.5"/>
+
+  <!-- Nodes -->
+  <!-- A -->
+  <circle cx="300" cy="110" r="22" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="300" y="114" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">A</text>
+  <!-- B -->
+  <circle cx="440" cy="170" r="22" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="440" y="174" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">B</text>
+  <!-- C -->
+  <circle cx="440" cy="300" r="22" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="440" y="304" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">C</text>
+  <!-- D -->
+  <circle cx="300" cy="360" r="22" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="300" y="364" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">D</text>
+  <!-- E -->
+  <circle cx="160" cy="300" r="22" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="160" y="304" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">E</text>
+  <!-- F -->
+  <circle cx="160" cy="170" r="22" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="160" y="174" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">F</text>
+
+  <!-- Formula note -->
+  <rect x="210" y="215" width="180" height="36" rx="6" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1"/>
+  <text x="300" y="230" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Full Mesh: n(n-1)/2 links</text>
+  <text x="300" y="244" text-anchor="middle" font-size="10" fill="#0A5C36">6 nodes = 15 links</text>
+
+  <!-- Legend -->
+  <line x1="30" y1="404" x2="55" y2="404" stroke="#B0D4BF" stroke-width="1.5"/>
+  <text x="62" y="408" font-size="10" fill="#888">Dedicated link (redundant path)</text>
+  <circle cx="340" cy="404" r="6" fill="#0A5C36"/>
+  <text x="352" y="408" font-size="10" fill="#888">Network device / node</text>
+</svg>
