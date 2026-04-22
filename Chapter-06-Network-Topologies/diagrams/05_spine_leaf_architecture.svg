@@ -1,0 +1,122 @@
+<svg viewBox="0 0 660 440" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="660" height="440" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="660" height="4" fill="#0A5C36"/>
+
+  <text x="330" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0A5C36" letter-spacing="0.5">Spine-and-Leaf Architecture</text>
+  <text x="330" y="56" text-anchor="middle" font-size="11" fill="#888" letter-spacing="1">DATA CENTER  —  OPTIMIZED FOR EAST-WEST TRAFFIC</text>
+
+  <!-- Spine layer label -->
+  <rect x="20" y="100" width="80" height="60" rx="6" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1"/>
+  <text x="60" y="122" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">SPINE</text>
+  <text x="60" y="136" text-anchor="middle" font-size="9" fill="#555">Layer</text>
+  <text x="60" y="149" text-anchor="middle" font-size="8" fill="#888">High-speed</text>
+  <text x="60" y="160" text-anchor="middle" font-size="8" fill="#888">core fabric</text>
+
+  <!-- Leaf layer label -->
+  <rect x="20" y="270" width="80" height="60" rx="6" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1"/>
+  <text x="60" y="292" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">LEAF</text>
+  <text x="60" y="306" text-anchor="middle" font-size="9" fill="#555">Layer</text>
+  <text x="60" y="319" text-anchor="middle" font-size="8" fill="#888">Access &amp;</text>
+  <text x="60" y="330" text-anchor="middle" font-size="8" fill="#888">aggregation</text>
+
+  <!-- Spine switches: 3 across top -->
+  <!-- S1=190, S2=330, S3=470 at y=130 -->
+  <rect x="162" y="104" width="56" height="52" rx="8" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="190" y="128" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Spine</text>
+  <text x="190" y="142" text-anchor="middle" font-size="9" fill="#BAD9C5">SW-1</text>
+  <text x="190" y="87" text-anchor="middle" font-size="9" fill="#555">Spine Switch 1</text>
+
+  <rect x="302" y="104" width="56" height="52" rx="8" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="330" y="128" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Spine</text>
+  <text x="330" y="142" text-anchor="middle" font-size="9" fill="#BAD9C5">SW-2</text>
+  <text x="330" y="87" text-anchor="middle" font-size="9" fill="#555">Spine Switch 2</text>
+
+  <rect x="442" y="104" width="56" height="52" rx="8" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="470" y="128" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Spine</text>
+  <text x="470" y="142" text-anchor="middle" font-size="9" fill="#BAD9C5">SW-3</text>
+  <text x="470" y="87" text-anchor="middle" font-size="9" fill="#555">Spine Switch 3</text>
+
+  <!-- Leaf switches: 4 across bottom -->
+  <!-- L1=150, L2=270, L3=390, L4=510 at y=300 -->
+  <rect x="122" y="274" width="56" height="52" rx="8" fill="#1D9E75" stroke="#fff" stroke-width="2"/>
+  <text x="150" y="298" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Leaf</text>
+  <text x="150" y="312" text-anchor="middle" font-size="9" fill="#E8F4EE">SW-A</text>
+
+  <rect x="242" y="274" width="56" height="52" rx="8" fill="#1D9E75" stroke="#fff" stroke-width="2"/>
+  <text x="270" y="298" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Leaf</text>
+  <text x="270" y="312" text-anchor="middle" font-size="9" fill="#E8F4EE">SW-B</text>
+
+  <rect x="362" y="274" width="56" height="52" rx="8" fill="#1D9E75" stroke="#fff" stroke-width="2"/>
+  <text x="390" y="298" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Leaf</text>
+  <text x="390" y="312" text-anchor="middle" font-size="9" fill="#E8F4EE">SW-C</text>
+
+  <rect x="482" y="274" width="56" height="52" rx="8" fill="#1D9E75" stroke="#fff" stroke-width="2"/>
+  <text x="510" y="298" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Leaf</text>
+  <text x="510" y="312" text-anchor="middle" font-size="9" fill="#E8F4EE">SW-D</text>
+
+  <!-- Spine-Leaf connections (every leaf to every spine = 12 lines) -->
+  <!-- Leaf A (150) to Spines -->
+  <line x1="150" y1="274" x2="190" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="155" y1="274" x2="330" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="162" y1="274" x2="470" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- Leaf B (270) to Spines -->
+  <line x1="270" y1="274" x2="190" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="270" y1="274" x2="330" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="276" y1="274" x2="470" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- Leaf C (390) to Spines -->
+  <line x1="384" y1="274" x2="190" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="390" y1="274" x2="330" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="390" y1="274" x2="470" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <!-- Leaf D (510) to Spines -->
+  <line x1="498" y1="274" x2="190" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="504" y1="274" x2="330" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+  <line x1="510" y1="274" x2="470" y2="156" stroke="#B0D4BF" stroke-width="1.5"/>
+
+  <!-- Servers below leaf switches -->
+  <rect x="122" y="354" width="56" height="26" rx="4" fill="#F0EDE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="150" y="370" text-anchor="middle" font-size="9" fill="#444">Servers</text>
+
+  <rect x="242" y="354" width="56" height="26" rx="4" fill="#F0EDE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="270" y="370" text-anchor="middle" font-size="9" fill="#444">Servers</text>
+
+  <rect x="362" y="354" width="56" height="26" rx="4" fill="#F0EDE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="390" y="370" text-anchor="middle" font-size="9" fill="#444">Servers</text>
+
+  <rect x="482" y="354" width="56" height="26" rx="4" fill="#F0EDE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="510" y="370" text-anchor="middle" font-size="9" fill="#444">Servers</text>
+
+  <!-- Lines leaf to servers -->
+  <line x1="150" y1="326" x2="150" y2="354" stroke="#ccc" stroke-width="1.2"/>
+  <line x1="270" y1="326" x2="270" y2="354" stroke="#ccc" stroke-width="1.2"/>
+  <line x1="390" y1="326" x2="390" y2="354" stroke="#ccc" stroke-width="1.2"/>
+  <line x1="510" y1="326" x2="510" y2="354" stroke="#ccc" stroke-width="1.2"/>
+
+  <!-- East-West arrow annotation -->
+  <line x1="150" y1="395" x2="510" y2="395" stroke="#EF9F27" stroke-width="1.5" stroke-dasharray="4,3" marker-end="url(#ew-arrow)" marker-start="url(#ew-arrow-r)"/>
+  <defs>
+    <marker id="ew-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#EF9F27"/>
+    </marker>
+    <marker id="ew-arrow-r" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L0,6 L8,3 z" fill="#EF9F27"/>
+    </marker>
+  </defs>
+  <rect x="272" y="384" width="116" height="17" rx="4" fill="#FFF8E7"/>
+  <text x="330" y="395" text-anchor="middle" font-size="9" fill="#BA7517" font-weight="700">East-West Traffic</text>
+
+  <!-- 2-hop annotation -->
+  <rect x="555" y="180" width="90" height="46" rx="5" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1"/>
+  <text x="600" y="196" text-anchor="middle" font-size="9" fill="#0A5C36" font-weight="700">Max 2 hops</text>
+  <text x="600" y="208" text-anchor="middle" font-size="8" fill="#555">Leaf → Spine</text>
+  <text x="600" y="219" text-anchor="middle" font-size="8" fill="#555">→ Leaf</text>
+
+  <!-- Legend -->
+  <rect x="28" y="420" width="11" height="11" rx="2" fill="#0A5C36"/>
+  <text x="44" y="430" font-size="9" fill="#888">Spine switch</text>
+  <rect x="120" y="420" width="11" height="11" rx="2" fill="#1D9E75"/>
+  <text x="136" y="430" font-size="9" fill="#888">Leaf switch</text>
+  <rect x="210" y="420" width="11" height="11" rx="2" fill="#F0EDE8" stroke="#B4B2A9" stroke-width="1"/>
+  <text x="226" y="430" font-size="9" fill="#888">Compute / server</text>
+  <line x1="330" y1="425" x2="350" y2="425" stroke="#B0D4BF" stroke-width="1.5"/>
+  <text x="356" y="429" font-size="9" fill="#888">Spine-leaf link</text>
+</svg>

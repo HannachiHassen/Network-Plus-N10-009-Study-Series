@@ -1,0 +1,109 @@
+<svg viewBox="0 0 660 430" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="660" height="430" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="660" height="4" fill="#0A5C36"/>
+
+  <text x="330" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0A5C36" letter-spacing="0.5">Collapsed Core Architecture</text>
+  <text x="330" y="56" text-anchor="middle" font-size="11" fill="#888" letter-spacing="1">TWO-TIER MODEL  —  CORE + DISTRIBUTION MERGED</text>
+
+  <!-- Side-by-side comparison -->
+  <!-- Left: 3-tier mini -->
+  <rect x="20" y="72" width="270" height="280" rx="8" fill="#F7F7F3" stroke="#DDD" stroke-width="1"/>
+  <text x="155" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#888">Three-Tier (reference)</text>
+
+  <!-- Core layer mini -->
+  <rect x="50" y="100" width="210" height="36" rx="5" fill="#0A5C36" opacity="0.7"/>
+  <text x="155" y="123" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Core Layer</text>
+
+  <!-- Distribution layer mini -->
+  <rect x="50" y="154" width="210" height="36" rx="5" fill="#085041" opacity="0.7"/>
+  <text x="155" y="177" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Distribution Layer</text>
+
+  <!-- Bracket showing these two separate -->
+  <line x1="270" y1="100" x2="285" y2="100" stroke="#999" stroke-width="1"/>
+  <line x1="285" y1="100" x2="285" y2="190" stroke="#999" stroke-width="1"/>
+  <line x1="270" y1="190" x2="285" y2="190" stroke="#999" stroke-width="1"/>
+  <text x="292" y="150" font-size="9" fill="#888">2</text>
+  <text x="292" y="161" font-size="9" fill="#888">sep.</text>
+  <text x="292" y="172" font-size="9" fill="#888">layers</text>
+
+  <!-- Access layer mini -->
+  <rect x="50" y="208" width="210" height="36" rx="5" fill="#1D9E75" opacity="0.7"/>
+  <text x="155" y="231" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Access Layer</text>
+
+  <!-- Device dots mini -->
+  <circle cx="90" cy="265" r="8" fill="#888"/>
+  <circle cx="120" cy="265" r="8" fill="#888"/>
+  <circle cx="150" cy="265" r="8" fill="#888"/>
+  <circle cx="180" cy="265" r="8" fill="#888"/>
+  <circle cx="210" cy="265" r="8" fill="#888"/>
+  <text x="155" y="285" text-anchor="middle" font-size="9" fill="#888">End devices</text>
+  <line x1="90" y1="244" x2="90" y2="257" stroke="#ccc" stroke-width="1"/>
+  <line x1="120" y1="244" x2="120" y2="257" stroke="#ccc" stroke-width="1"/>
+  <line x1="150" y1="244" x2="150" y2="257" stroke="#ccc" stroke-width="1"/>
+  <line x1="180" y1="244" x2="180" y2="257" stroke="#ccc" stroke-width="1"/>
+  <line x1="210" y1="244" x2="210" y2="257" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Arrow pointing right -->
+  <text x="315" y="215" text-anchor="middle" font-size="28" fill="#0A5C36">→</text>
+  <text x="315" y="232" text-anchor="middle" font-size="9" fill="#555">Collapse</text>
+
+  <!-- Right: Collapsed core -->
+  <rect x="360" y="72" width="280" height="280" rx="8" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1.5"/>
+  <text x="500" y="92" text-anchor="middle" font-size="11" font-weight="700" fill="#0A5C36">Collapsed Core (Two-Tier)</text>
+
+  <!-- Collapsed core+distribution layer (combined) -->
+  <rect x="390" y="100" width="220" height="68" rx="8" fill="#0A5C36"/>
+  <text x="500" y="125" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">Core + Distribution</text>
+  <text x="500" y="141" text-anchor="middle" font-size="9" fill="#BAD9C5">Routing, Policy, ACL, QoS</text>
+  <text x="500" y="155" text-anchor="middle" font-size="9" fill="#BAD9C5">High-speed backbone</text>
+
+  <!-- Redundancy label -->
+  <rect x="440" y="100" width="120" height="0" fill="none"/>
+
+  <!-- Access layer -->
+  <rect x="390" y="192" width="220" height="48" rx="8" fill="#1D9E75"/>
+  <text x="500" y="213" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">Access Layer</text>
+  <text x="500" y="229" text-anchor="middle" font-size="9" fill="#E1F5EE">Port security, PoE, VLANs</text>
+
+  <!-- Lines between collapsed core and access -->
+  <line x1="440" y1="168" x2="430" y2="192" stroke="#fff" stroke-width="1.5"/>
+  <line x1="500" y1="168" x2="500" y2="192" stroke="#fff" stroke-width="1.5"/>
+  <line x1="560" y1="168" x2="570" y2="192" stroke="#fff" stroke-width="1.5"/>
+
+  <!-- End devices -->
+  <circle cx="410" cy="265" r="9" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="440" cy="265" r="9" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="470" cy="265" r="9" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="500" cy="265" r="9" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="530" cy="265" r="9" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="560" cy="265" r="9" fill="#888" stroke="#fff" stroke-width="1"/>
+  <text x="485" y="286" text-anchor="middle" font-size="9" fill="#555">End devices</text>
+  <line x1="410" y1="240" x2="410" y2="256" stroke="#ccc" stroke-width="1"/>
+  <line x1="440" y1="240" x2="440" y2="256" stroke="#ccc" stroke-width="1"/>
+  <line x1="470" y1="240" x2="470" y2="256" stroke="#ccc" stroke-width="1"/>
+  <line x1="500" y1="240" x2="500" y2="256" stroke="#ccc" stroke-width="1"/>
+  <line x1="530" y1="240" x2="530" y2="256" stroke="#ccc" stroke-width="1"/>
+  <line x1="560" y1="240" x2="560" y2="256" stroke="#ccc" stroke-width="1"/>
+
+  <!-- Bracket saved layers label -->
+  <line x1="620" y1="100" x2="635" y2="100" stroke="#0A5C36" stroke-width="1"/>
+  <line x1="635" y1="100" x2="635" y2="168" stroke="#0A5C36" stroke-width="1"/>
+  <line x1="620" y1="168" x2="635" y2="168" stroke="#0A5C36" stroke-width="1"/>
+  <text x="642" y="130" font-size="8" fill="#0A5C36" font-weight="700">1</text>
+  <text x="642" y="141" font-size="8" fill="#0A5C36">layer</text>
+  <text x="642" y="152" font-size="8" fill="#0A5C36">saved</text>
+
+  <!-- Key differences table -->
+  <rect x="20" y="372" width="620" height="48" rx="6" fill="#F7F7F3" stroke="#DDD" stroke-width="1"/>
+  <text x="100" y="389" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Best for</text>
+  <text x="100" y="404" text-anchor="middle" font-size="9" fill="#555">SMB / single campus</text>
+  <text x="270" y="389" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Cost</text>
+  <text x="270" y="404" text-anchor="middle" font-size="9" fill="#555">Fewer switches needed</text>
+  <text x="440" y="389" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Trade-off</text>
+  <text x="440" y="404" text-anchor="middle" font-size="9" fill="#555">Less scalable than 3-tier</text>
+  <text x="590" y="389" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Layers</text>
+  <text x="590" y="404" text-anchor="middle" font-size="9" fill="#555">2 (not 3)</text>
+  <line x1="185" y1="374" x2="185" y2="418" stroke="#DDD" stroke-width="1"/>
+  <line x1="355" y1="374" x2="355" y2="418" stroke="#DDD" stroke-width="1"/>
+  <line x1="525" y1="374" x2="525" y2="418" stroke="#DDD" stroke-width="1"/>
+</svg>

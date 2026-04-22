@@ -1,0 +1,60 @@
+<svg viewBox="0 0 600 300" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="600" height="300" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="600" height="4" fill="#0A5C36"/>
+
+  <text x="300" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0A5C36" letter-spacing="0.5">Point-to-Point Topology</text>
+  <text x="300" y="56" text-anchor="middle" font-size="11" fill="#888" letter-spacing="1">DEDICATED LINK BETWEEN EXACTLY TWO ENDPOINTS</text>
+
+  <!-- Node A: Router/Office left -->
+  <rect x="60" y="110" width="120" height="80" rx="10" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="120" y="140" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Site A</text>
+  <text x="120" y="157" text-anchor="middle" font-size="10" fill="#BAD9C5">Router</text>
+  <text x="120" y="172" text-anchor="middle" font-size="9" fill="#E8F4EE">192.168.1.1</text>
+
+  <!-- Node B: Router/Office right -->
+  <rect x="420" y="110" width="120" height="80" rx="10" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="480" y="140" text-anchor="middle" font-size="12" fill="#fff" font-weight="700">Site B</text>
+  <text x="480" y="157" text-anchor="middle" font-size="10" fill="#BAD9C5">Router</text>
+  <text x="480" y="172" text-anchor="middle" font-size="9" fill="#E8F4EE">192.168.2.1</text>
+
+  <!-- Dedicated link -->
+  <defs>
+    <marker id="p2p-arrow" markerWidth="8" markerHeight="8" refX="6" refY="3" orient="auto">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0A5C36"/>
+    </marker>
+    <marker id="p2p-arrow-l" markerWidth="8" markerHeight="8" refX="2" refY="3" orient="auto-start-reverse">
+      <path d="M0,0 L0,6 L8,3 z" fill="#0A5C36"/>
+    </marker>
+  </defs>
+  <line x1="180" y1="150" x2="420" y2="150" stroke="#0A5C36" stroke-width="3" marker-end="url(#p2p-arrow)" marker-start="url(#p2p-arrow-l)"/>
+
+  <!-- Link label -->
+  <rect x="224" y="132" width="152" height="22" rx="5" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1"/>
+  <text x="300" y="147" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Dedicated Leased Line / WAN</text>
+
+  <!-- Bandwidth note below link -->
+  <text x="300" y="178" text-anchor="middle" font-size="10" fill="#555">Full bandwidth — no shared medium — no collisions</text>
+
+  <!-- Sub-examples -->
+  <rect x="50" y="215" width="500" height="60" rx="8" fill="#F7F7F3" stroke="#DDD" stroke-width="1"/>
+  <text x="300" y="233" text-anchor="middle" font-size="10" fill="#0A5C36" font-weight="700">Common Use Cases</text>
+  <text x="120" y="252" text-anchor="middle" font-size="10" fill="#555">WAN Leased Line</text>
+  <text x="240" y="252" text-anchor="middle" font-size="10" fill="#555">Serial Link</text>
+  <text x="360" y="252" text-anchor="middle" font-size="10" fill="#555">Fiber Uplink</text>
+  <text x="480" y="252" text-anchor="middle" font-size="10" fill="#555">ISP Handoff</text>
+  <text x="120" y="267" text-anchor="middle" font-size="9" fill="#AAA">T1/T3, MPLS</text>
+  <text x="240" y="267" text-anchor="middle" font-size="9" fill="#AAA">RS-232 / HDLC</text>
+  <text x="360" y="267" text-anchor="middle" font-size="9" fill="#AAA">Dark fiber</text>
+  <text x="480" y="267" text-anchor="middle" font-size="9" fill="#AAA">BGP peer link</text>
+
+  <!-- Dividers -->
+  <line x1="180" y1="218" x2="180" y2="272" stroke="#DDD" stroke-width="1"/>
+  <line x1="300" y1="218" x2="300" y2="272" stroke="#DDD" stroke-width="1"/>
+  <line x1="420" y1="218" x2="420" y2="272" stroke="#DDD" stroke-width="1"/>
+
+  <!-- Legend at bottom -->
+  <rect x="30" y="285" width="11" height="11" rx="2" fill="#0A5C36"/>
+  <text x="46" y="294" font-size="9" fill="#888">Network endpoint / router</text>
+  <line x1="200" y1="291" x2="228" y2="291" stroke="#0A5C36" stroke-width="3" marker-end="url(#p2p-arrow)"/>
+  <text x="234" y="294" font-size="9" fill="#888">Bidirectional dedicated link</text>
+</svg>

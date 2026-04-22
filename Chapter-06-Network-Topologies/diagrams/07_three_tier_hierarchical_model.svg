@@ -1,0 +1,133 @@
+<svg viewBox="0 0 660 480" xmlns="http://www.w3.org/2000/svg" font-family="Georgia, serif">
+  <rect width="660" height="480" fill="#FAFAF8"/>
+  <rect x="0" y="0" width="660" height="4" fill="#0A5C36"/>
+
+  <text x="330" y="36" text-anchor="middle" font-size="20" font-weight="700" fill="#0A5C36" letter-spacing="0.5">Three-Tier Hierarchical Model</text>
+  <text x="330" y="56" text-anchor="middle" font-size="11" fill="#888" letter-spacing="1">CORE — DISTRIBUTION — ACCESS</text>
+
+  <!-- Tier bands -->
+  <rect x="20" y="74" width="620" height="98" rx="8" fill="#E8F4EE" stroke="#0A5C36" stroke-width="1"/>
+  <rect x="20" y="192" width="620" height="98" rx="8" fill="#D1E8DB" stroke="#0A5C36" stroke-width="1"/>
+  <rect x="20" y="310" width="620" height="110" rx="8" fill="#BAD9C5" stroke="#0A5C36" stroke-width="1"/>
+
+  <!-- Tier labels left side -->
+  <text x="36" y="115" font-size="11" font-weight="700" fill="#0A5C36">CORE</text>
+  <text x="36" y="129" font-size="9" fill="#555">Layer 3</text>
+  <text x="36" y="141" font-size="9" fill="#555">High-speed</text>
+  <text x="36" y="153" font-size="9" fill="#555">backbone</text>
+
+  <text x="36" y="232" font-size="11" font-weight="700" fill="#0A5C36">DIST.</text>
+  <text x="36" y="246" font-size="9" fill="#555">Layer 3</text>
+  <text x="36" y="258" font-size="9" fill="#555">Policy &amp;</text>
+  <text x="36" y="270" font-size="9" fill="#555">routing</text>
+
+  <text x="36" y="349" font-size="11" font-weight="700" fill="#0A5C36">ACCESS</text>
+  <text x="36" y="363" font-size="9" fill="#555">Layer 2</text>
+  <text x="36" y="375" font-size="9" fill="#555">End device</text>
+  <text x="36" y="387" font-size="9" fill="#555">connectivity</text>
+
+  <!-- CORE layer: 2 core routers -->
+  <rect x="220" y="86" width="90" height="52" rx="8" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="265" y="109" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">Core</text>
+  <text x="265" y="124" text-anchor="middle" font-size="9" fill="#BAD9C5">Router 1</text>
+
+  <rect x="350" y="86" width="90" height="52" rx="8" fill="#0A5C36" stroke="#fff" stroke-width="2"/>
+  <text x="395" y="109" text-anchor="middle" font-size="11" fill="#fff" font-weight="700">Core</text>
+  <text x="395" y="124" text-anchor="middle" font-size="9" fill="#BAD9C5">Router 2</text>
+
+  <!-- Core-Core link (redundant) -->
+  <line x1="310" y1="112" x2="350" y2="112" stroke="#fff" stroke-width="2" stroke-dasharray="4,2"/>
+
+  <!-- DISTRIBUTION layer: 3 switches -->
+  <rect x="140" y="202" width="80" height="52" rx="8" fill="#085041" stroke="#fff" stroke-width="1.5"/>
+  <text x="180" y="224" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Dist</text>
+  <text x="180" y="238" text-anchor="middle" font-size="9" fill="#9FE1CB">SW-1</text>
+
+  <rect x="290" y="202" width="80" height="52" rx="8" fill="#085041" stroke="#fff" stroke-width="1.5"/>
+  <text x="330" y="224" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Dist</text>
+  <text x="330" y="238" text-anchor="middle" font-size="9" fill="#9FE1CB">SW-2</text>
+
+  <rect x="440" y="202" width="80" height="52" rx="8" fill="#085041" stroke="#fff" stroke-width="1.5"/>
+  <text x="480" y="224" text-anchor="middle" font-size="10" fill="#fff" font-weight="700">Dist</text>
+  <text x="480" y="238" text-anchor="middle" font-size="9" fill="#9FE1CB">SW-3</text>
+
+  <!-- Core to Dist lines -->
+  <line x1="265" y1="138" x2="180" y2="202" stroke="#0A5C36" stroke-width="1.8"/>
+  <line x1="265" y1="138" x2="330" y2="202" stroke="#0A5C36" stroke-width="1.8"/>
+  <line x1="395" y1="138" x2="330" y2="202" stroke="#0A5C36" stroke-width="1.8"/>
+  <line x1="395" y1="138" x2="480" y2="202" stroke="#0A5C36" stroke-width="1.8"/>
+
+  <!-- ACCESS layer: 6 switches -->
+  <rect x="100" y="322" width="68" height="46" rx="6" fill="#1D9E75" stroke="#fff" stroke-width="1.5"/>
+  <text x="134" y="341" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Access</text>
+  <text x="134" y="355" text-anchor="middle" font-size="8" fill="#E1F5EE">SW-A1</text>
+
+  <rect x="182" y="322" width="68" height="46" rx="6" fill="#1D9E75" stroke="#fff" stroke-width="1.5"/>
+  <text x="216" y="341" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Access</text>
+  <text x="216" y="355" text-anchor="middle" font-size="8" fill="#E1F5EE">SW-A2</text>
+
+  <rect x="264" y="322" width="68" height="46" rx="6" fill="#1D9E75" stroke="#fff" stroke-width="1.5"/>
+  <text x="298" y="341" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Access</text>
+  <text x="298" y="355" text-anchor="middle" font-size="8" fill="#E1F5EE">SW-B1</text>
+
+  <rect x="346" y="322" width="68" height="46" rx="6" fill="#1D9E75" stroke="#fff" stroke-width="1.5"/>
+  <text x="380" y="341" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Access</text>
+  <text x="380" y="355" text-anchor="middle" font-size="8" fill="#E1F5EE">SW-B2</text>
+
+  <rect x="428" y="322" width="68" height="46" rx="6" fill="#1D9E75" stroke="#fff" stroke-width="1.5"/>
+  <text x="462" y="341" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Access</text>
+  <text x="462" y="355" text-anchor="middle" font-size="8" fill="#E1F5EE">SW-C1</text>
+
+  <rect x="510" y="322" width="68" height="46" rx="6" fill="#1D9E75" stroke="#fff" stroke-width="1.5"/>
+  <text x="544" y="341" text-anchor="middle" font-size="9" fill="#fff" font-weight="700">Access</text>
+  <text x="544" y="355" text-anchor="middle" font-size="8" fill="#E1F5EE">SW-C2</text>
+
+  <!-- Dist to Access lines -->
+  <line x1="180" y1="254" x2="134" y2="322" stroke="#0A5C36" stroke-width="1.4"/>
+  <line x1="180" y1="254" x2="216" y2="322" stroke="#0A5C36" stroke-width="1.4"/>
+  <line x1="330" y1="254" x2="298" y2="322" stroke="#0A5C36" stroke-width="1.4"/>
+  <line x1="330" y1="254" x2="380" y2="322" stroke="#0A5C36" stroke-width="1.4"/>
+  <line x1="480" y1="254" x2="462" y2="322" stroke="#0A5C36" stroke-width="1.4"/>
+  <line x1="480" y1="254" x2="544" y2="322" stroke="#0A5C36" stroke-width="1.4"/>
+
+  <!-- End devices row -->
+  <text x="330" y="390" text-anchor="middle" font-size="9" fill="#555">End Devices: PCs, Phones, Printers, Servers, IoT</text>
+  <line x1="134" y1="368" x2="134" y2="400" stroke="#ccc" stroke-width="1"/>
+  <line x1="216" y1="368" x2="216" y2="400" stroke="#ccc" stroke-width="1"/>
+  <line x1="298" y1="368" x2="298" y2="400" stroke="#ccc" stroke-width="1"/>
+  <line x1="380" y1="368" x2="380" y2="400" stroke="#ccc" stroke-width="1"/>
+  <line x1="462" y1="368" x2="462" y2="400" stroke="#ccc" stroke-width="1"/>
+  <line x1="544" y1="368" x2="544" y2="400" stroke="#ccc" stroke-width="1"/>
+  <circle cx="134" cy="406" r="8" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="216" cy="406" r="8" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="298" cy="406" r="8" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="380" cy="406" r="8" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="462" cy="406" r="8" fill="#888" stroke="#fff" stroke-width="1"/>
+  <circle cx="544" cy="406" r="8" fill="#888" stroke="#fff" stroke-width="1"/>
+
+  <!-- Annotation boxes right side -->
+  <rect x="590" y="88" width="62" height="46" rx="5" fill="#fff" stroke="#0A5C36" stroke-width="1"/>
+  <text x="621" y="105" text-anchor="middle" font-size="8" fill="#0A5C36" font-weight="700">Routing</text>
+  <text x="621" y="116" text-anchor="middle" font-size="8" fill="#555">Speed &amp;</text>
+  <text x="621" y="126" text-anchor="middle" font-size="8" fill="#555">redundancy</text>
+
+  <rect x="590" y="204" width="62" height="46" rx="5" fill="#fff" stroke="#0A5C36" stroke-width="1"/>
+  <text x="621" y="221" text-anchor="middle" font-size="8" fill="#0A5C36" font-weight="700">Policy</text>
+  <text x="621" y="232" text-anchor="middle" font-size="8" fill="#555">ACL, QoS</text>
+  <text x="621" y="243" text-anchor="middle" font-size="8" fill="#555">VLAN route</text>
+
+  <rect x="590" y="320" width="62" height="46" rx="5" fill="#fff" stroke="#0A5C36" stroke-width="1"/>
+  <text x="621" y="337" text-anchor="middle" font-size="8" fill="#0A5C36" font-weight="700">Access</text>
+  <text x="621" y="348" text-anchor="middle" font-size="8" fill="#555">PoE, 802.1X</text>
+  <text x="621" y="359" text-anchor="middle" font-size="8" fill="#555">Port security</text>
+
+  <!-- Legend -->
+  <rect x="28" y="462" width="10" height="10" rx="2" fill="#0A5C36"/>
+  <text x="42" y="471" font-size="9" fill="#888">Core router</text>
+  <rect x="120" y="462" width="10" height="10" rx="2" fill="#085041"/>
+  <text x="134" y="471" font-size="9" fill="#888">Distribution switch</text>
+  <rect x="256" y="462" width="10" height="10" rx="2" fill="#1D9E75"/>
+  <text x="270" y="471" font-size="9" fill="#888">Access switch</text>
+  <circle cx="370" cy="467" r="5" fill="#888"/>
+  <text x="380" y="471" font-size="9" fill="#888">End device</text>
+</svg>
