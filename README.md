@@ -243,30 +243,30 @@ A network's topology defines how devices are physically and logically connected.
 ├── 📄 README.md                         ← You are here
 │
 ├── 📁 Chapter-01-OSI-Model/
-│   ├── The OSI model Explained.pdf
+│   ├── the-OSI-model-explained.pdf
 │   ├── diagrams/
 │   └── practice-questions.md
 │
 ├── 📁 Chapter-02-Networking-Appliances/
-│   ├── Netorking Appliance, Applications and Functions.pdf
+│   ├── netorking-appliance-applications-and-functions.pdf
 │   ├── diagrams/
 │   └── practice-questions.md
 │
 ├── 📁 Chapter-03-Cloud-Concepts/
-│   ├── Cloud Concepts.pdf
+│   ├── cloud-concepts.pdf
 │   └── practice-questions.md
 │
 ├── 📁 Chapter-04-Ports-Protocols-Services/
-│   ├── notes.md
-│   ├── port-cheat-sheet.md
+│   ├── ports-protocols-services.pdf
+│   ├── port-number-cheat-sheet.md
 │   └── practice-questions.md
 │
 ├── 📁 Chapter-05-Media-Transceivers/
-│   ├── notes.md
+│   ├── transmission-media-transceivers.pdf
 │   └── practice-questions.md
 │
 ├── 📁 Chapter-06-Topologies-Architectures/
-│   ├── notes.md
+│   ├── network-topologies-architectuers-types.pdf
 │   ├── diagrams/
 │   └── practice-questions.md
 │
